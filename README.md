@@ -10,6 +10,7 @@ The goal for this project is to create an Ethereum app to allow meeting organize
 3. [Truffle Installation](http://truffleframework.com/docs/getting_started/installation) (globally install the truffle npm package for compiling, testing, building smart contracts)
 ## Coding Standards
 ### Linting
+__NOTE:__ Keeping linting rules in separate configuration files (such as .eslintrc.json & .soliumrc.json), outside of IDEs, make it easier for developers to share and follow agreed upon code styles.
 #### JavaScript
 ESLint is included as a local npm package devDependency, for linting project JavaScript files.
 * ESLint configuration settings and rules are stored in `.eslintrc.json`
