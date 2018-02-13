@@ -5,7 +5,9 @@
   "main": "truffle-config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint-js": "eslint . --ext .js"
+    "lint-js": "eslint . --ext .js",
+    "lint-sol": "solium --dir contracts/",
+    "lint-sol-w": "solium --watch --dir contracts/"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,7 @@
   },
   "homepage": "https://github.com/Charleston-Blockchain-Devs/attendance_incentivizer#readme",
   "devDependencies": {
-    "eslint": "^4.17.0"
+    "eslint": "^4.17.0",
+    "solium": "^1.1.3"
   }
 }
