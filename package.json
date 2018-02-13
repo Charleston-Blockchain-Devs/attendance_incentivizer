@@ -4,21 +4,21 @@
   "description": "An Ethereum blockchain application used to incentivize meeting and event attendance.",
   "main": "truffle-config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint-js": "eslint . --ext .js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Charleston-Blockchain-Devs/attendance_incentivizer.git"
   },
-  "keywords": [
-    "Ethereum",
-    "Solidity",
-    "Truffle"
-  ],
+  "keywords": ["Ethereum", "Solidity", "Truffle"],
   "author": "Blockchain Programming (Charleston meetup)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Charleston-Blockchain-Devs/attendance_incentivizer/issues"
   },
-  "homepage": "https://github.com/Charleston-Blockchain-Devs/attendance_incentivizer#readme"
+  "homepage": "https://github.com/Charleston-Blockchain-Devs/attendance_incentivizer#readme",
+  "devDependencies": {
+    "eslint": "^4.17.0"
+  }
 }

@@ -1,0 +1,36 @@
+{
+  "env": {
+    "es6": true
+  },
+  "globals": {
+    "window": true,
+    "document": true,
+    "browser": true,
+    "navigator": true,
+    "alert": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true
+    }
+  },
+  "rules": {
+    "semi": "error",
+    "no-console": "warn",
+    "no-multi-spaces": [
+      "warn",
+      {
+        "ignoreEOLComments": true
+      }
+    ],
+    "quotes": [
+      "error",
+      "double",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ]
+  }
+}
