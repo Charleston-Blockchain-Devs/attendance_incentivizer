@@ -13,7 +13,11 @@
     "type": "git",
     "url": "git+https://github.com/Charleston-Blockchain-Devs/attendance_incentivizer.git"
   },
-  "keywords": ["Ethereum", "Solidity", "Truffle"],
+  "keywords": [
+    "Ethereum",
+    "Solidity",
+    "Truffle"
+  ],
   "author": "Blockchain Programming (Charleston meetup)",
   "license": "ISC",
   "bugs": {
@@ -21,7 +25,6 @@
   },
   "homepage": "https://github.com/Charleston-Blockchain-Devs/attendance_incentivizer#readme",
   "devDependencies": {
-    "eslint": "^4.17.0",
-    "solium": "^1.1.3"
+    "eslint": "^4.17.0"
   }
 }
