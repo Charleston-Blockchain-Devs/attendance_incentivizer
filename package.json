@@ -6,18 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint-js": "eslint . --ext .js",
-    "lint-sol": "solium --dir contracts/",
-    "lint-sol-w": "solium --watch --dir contracts/"
+    "lint-sol": "solhint contracts/**/*.sol"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Charleston-Blockchain-Devs/attendance_incentivizer.git"
   },
-  "keywords": [
-    "Ethereum",
-    "Solidity",
-    "Truffle"
-  ],
+  "keywords": ["Ethereum", "Solidity", "Truffle"],
   "author": "Blockchain Programming (Charleston meetup)",
   "license": "ISC",
   "bugs": {
@@ -25,6 +20,7 @@
   },
   "homepage": "https://github.com/Charleston-Blockchain-Devs/attendance_incentivizer#readme",
   "devDependencies": {
-    "eslint": "^4.17.0"
+    "eslint": "^4.17.0",
+    "solhint": "^1.1.10"
   }
 }
