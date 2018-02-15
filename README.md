@@ -12,18 +12,34 @@ The goal for this project is to create an Ethereum app to allow meeting organize
 
 ## Coding Standards
 ### Linting
-__NOTE:__ Keeping linting rules in separate configuration files (such as .eslintrc.json & .soliumrc.json), outside of IDEs, make it easier for developers to share and follow agreed upon code styles.
+Linting project source code helps ensure common styling, security guidelines, and best practices. Thus, making the code more reliable, maintainable, and easier to work with on a team project.
+  
+This project contains both JavaScript and Solidity source code files. Linting can and should be performed on both, __before committing__.
 
+> NOTE: For this project, linting rules and configurations are kept in project configuration files (such as .eslintrc.json & .solhint.json), instead of embedding them in the IDE, making it easier for developers to be consistant across various development environments.
+  
+Typically the default rules from selected linters are used. To adjust any lint rule, seek group consensus, and create a pull request with rule change in the appropriate linter configuration file.
+  
 #### JavaScript
 ESLint is included as a local npm package devDependency, for linting project JavaScript files.
 * ESLint configuration settings and rules are stored in `.eslintrc.json`
-* Run npm script 'lint-js' to lint JavaScript files,  `npm run lint-js`
+* To run lint on JavaScript files from the command line, run: `npm run lint-js`
+* Most popular IDEs can be configured to use reference `.eslintrc.json`, so that linting can occur within the IDE
+
+##### Rules
+ESLint rules cover Possible Errors, Style, and Best Practices (and more), and can be reviewed [here](https://eslint.org/docs/rules/).
 
 #### Solidity
-The current solidity linting package chosen for this project is 'solhint'. This package is popular in the development community, provides good [documention](https://protofire.github.io/solhint/), and support for popular IDEs (Atom, VS Code, Sublime, JetBrains, VIM, ...).
+The current solidity linting package chosen for this project is 'solhint'. This package is popular in the development community, provides good [documention](https://protofire.github.io/solhint/), and is supported by popular IDEs (Atom, VS Code, Sublime, JetBrains, VIM, ...).
+  
+> NOTE: Another popular linter was considered, ['solium'](http://solium.readthedocs.io/en/latest/). This has many of the same features as `solhint`, but a popular IDE (VS Code) did not support reading the solium configuration file, at this time. If down the road we wish to re-evaluate this package, it is a popular and well supported package, worth considering.
 
-Configuration and rule settings are maintained in project files `.solhint.json` and `.solhintingore`. This is done so linting can be managed and used independent of an IDE. An NPM script, `lint-sol`, was created so linting can be run from the command line, as well as be configured to work with IDEs.
-
-To run the solidity linter from the command line, type `npm run lint-sol`
-
-> NOTE: Another popular linter was considered, ['solium'](http://solium.readthedocs.io/en/latest/). This has many of the same features as `solhint`, but did not support external file rule configuration in its latest version when configured for use in VS Code. If down the road we wish to re-evaluate this package, it is a well received and supported package to be considered.
+Solhint is included as a local npm package devDependency, for linting project Solidity files.
+* Solhint configuration settings and rules are stored in `.solhint.json` and `.solhintingore`
+* To run lint on Solidity files from the command line, run: `npm run lint-sol`
+* Most popular IDEs can be configured to reference `.solhint.json` and `.solhintingore`, so that linting can occur within the IDE
+   
+##### Rules
+Solhint linting rules cover Security, Style, and Best Practices, and can be reviewed [here](https://protofire.github.io/solhint/rules.html).
+* Security Rules are implemented according to the [ConSensys Guide for Smart Contracts](https://consensys.github.io/smart-contract-best-practices/recommendations/)
+* Style Guide Rules are implemented according to the [Solidity Style Guide](http://solidity.readthedocs.io/en/develop/style-guide.html)
