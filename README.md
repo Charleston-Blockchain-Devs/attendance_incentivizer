@@ -43,3 +43,6 @@ Solhint is included as a local npm package devDependency, for linting project So
 Solhint linting rules cover Security, Style, and Best Practices, and can be reviewed [here](https://protofire.github.io/solhint/rules.html).
 * Security Rules are implemented according to the [ConSensys Guide for Smart Contracts](https://consensys.github.io/smart-contract-best-practices/recommendations/)
 * Style Guide Rules are implemented according to the [Solidity Style Guide](http://solidity.readthedocs.io/en/develop/style-guide.html)
+
+### New Comments
+## _I am making my first pull request_
