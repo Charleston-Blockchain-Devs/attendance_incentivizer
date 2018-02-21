@@ -15,3 +15,6 @@ __NOTE:__ Keeping linting rules in separate configuration files (such as .eslint
 ESLint is included as a local npm package devDependency, for linting project JavaScript files.
 * ESLint configuration settings and rules are stored in `.eslintrc.json`
 * Run npm script 'lint-js' to lint JavaScript files,  `npm run lint-js`
+
+### New Comments
+* comment 1
